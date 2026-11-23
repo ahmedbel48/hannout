@@ -1,12 +1,19 @@
+
+export type PublicationType = 'SHOP' | 'INDIVIDUAL';
+
+export type ProductStatus = 'AVAILABLE' | 'SOLD' | 'HIDDEN';
+
 export type Product = {
   id: string;
   title: string;
   description: string;
   price: number;
-  image: string;
-  category: string;
+  images: string[];
+  categoryId: string;
   city: string;
   sellerId: string;
-  sellerType: "shop" | "individual";
+  publicationType: PublicationType;
+  status: ProductStatus;
   createdAt: string;
+  updatedAt: string;
 };

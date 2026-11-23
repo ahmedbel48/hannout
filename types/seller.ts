@@ -1,8 +1,11 @@
+
 export type Seller = {
   id: string;
+  userId: string;
   name: string;
-  type: "shop" | "individual";
-  city: string;
+  description: string;
   phone: string;
-  image: string;
+  city: string;
+  image: string | null;
+  createdAt: string;
 };
