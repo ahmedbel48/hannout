@@ -10,6 +10,7 @@ export type Product = {
   price: number;
   images: string[];
   categoryId: string;
+  country?: string;
   city: string;
   sellerId: string;
   publicationType: PublicationType;
